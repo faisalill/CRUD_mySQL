@@ -3,7 +3,7 @@ const express = require('express')
 const {Sequelize, DataTypes}  = require('sequelize')
 const app = express()
 app.use(express.json())
-const sequelize = new Sequelize("crud","root","", {
+const sequelize = new Sequelize("crud","user_name","user_password", {
 host: 'localhost',
 dialect: 'mysql'
 })
